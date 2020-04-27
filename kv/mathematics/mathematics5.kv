@@ -1,0 +1,37 @@
+<Mathematics5>:
+    BoxLayout:
+        orientation: 'vertical'
+        TextInput:
+            id : text_input
+            text:
+                """
+                5.	Factorize mn - pq + pn - qm completely
+                (a)	(m + p) (n - q)
+                (b)	(n + q) (m - p)
+                (c)	(n + q) (m + p)
+                (d)	(n - q) (m - p)
+                (e) mp (n-q)
+                """
+            font_size: '20pt'
+            font_name : 'Arial'
+            readonly: True
+            size_hint: 1, 4
+            text_color:"Blue"
+        TextInput:
+            id : timed
+            text:
+        BoxLayout:
+            orientation: "horizontal"
+            Button:
+                text: "Answer"
+                font_size: '30pt'
+                size_hint: 0.5, 0.5
+                on_release: textinput.text = "A"
+
+            TextInput:
+                id:textinput
+                text:
+                font_size: '30pt'
+                disabled: True
+                readonly : True
+                size_hint: 0.5, 0.5

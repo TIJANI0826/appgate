@@ -1,0 +1,37 @@
+<Islamic2>:
+    BoxLayout:
+        timed: timed
+        orientation: 'vertical'
+        TextInput:
+            id : text_input
+            text:
+                """
+                2.  The lesson taught in Hadith 1 of An Nawawi's collection is that
+                (a) personal desire for the sake of Allah
+                (b) every intention is preceeded by action
+                (c) every action is preceeded by intention
+                (d) cleanliness is vital.
+                """
+            markup: True
+            font_size: '20pt'
+            readonly: True
+            size_hint: 1, 4
+            text_color:"Blue"
+        TextInput:
+            id : timed
+            text:
+        BoxLayout:
+            orientation: "horizontal"
+            Button:
+                text: "Answer"
+                font_size: '30pt'
+                size_hint: 0.5, 0.5
+                on_release: textinput.text = "C"
+
+            TextInput:
+                id:textinput
+                text:
+                font_size: '30pt'
+                disabled: True
+                readonly : True
+                size_hint: 0.5, 0.5

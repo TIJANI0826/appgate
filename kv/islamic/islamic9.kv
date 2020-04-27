@@ -1,0 +1,36 @@
+<Islamic9>:
+    BoxLayout:
+        orientation: 'vertical'
+        TextInput:
+            id : text_input
+            text:
+                """
+                9. The Quran was compiled on the advice of
+                (a) 'Umar bn 'Abdul-'Aziz
+                (b) 'Umar bn Al-Khattab
+                (c) Abu-Bakr As-Sideeq
+                (d) 'Uthman bn Affaan.
+                """
+            markup: True
+            font_size: '20pt'
+            readonly: True
+            size_hint: 1, 4
+            text_color:"Blue"
+        TextInput:
+            id : timed
+            text:
+        BoxLayout:
+            orientation: "horizontal"
+            Button:
+                text: "Answer"
+                font_size: '30pt'
+                size_hint: 0.5, 0.5
+                on_release: textinput.text = "B"
+
+            TextInput:
+                id:textinput
+                text:
+                font_size: '30pt'
+                disabled: True
+                readonly : True
+                size_hint: 0.5, 0.5

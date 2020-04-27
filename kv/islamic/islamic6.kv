@@ -1,0 +1,36 @@
+<Islamic6>:
+    BoxLayout:
+        orientation: 'vertical'
+        TextInput:
+            id : text_input
+            text:
+                """
+                6. Which of the following Hadith encourages the act of charity?
+                (a) 10
+                (b) 5
+                (c) 22
+                (d) 26
+                """
+            markup: True
+            font_size: '20pt'
+            readonly: True
+            size_hint: 1, 4
+            text_color:"Blue"
+        TextInput:
+            id : timed
+            text:
+        BoxLayout:
+            orientation: "horizontal"
+            Button:
+                text: "Answer"
+                font_size: '30pt'
+                size_hint: 0.5, 0.5
+                on_release: textinput.text = "D"
+
+            TextInput:
+                id:textinput
+                text:
+                font_size: '30pt'
+                disabled: True
+                readonly : True
+                size_hint: 0.5, 0.5

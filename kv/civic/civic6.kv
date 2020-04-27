@@ -1,0 +1,36 @@
+<Civic6>:
+    BoxLayout:
+        orientation: 'vertical'
+        TextInput:
+            id : text_input
+            text:
+                """
+                6.	Democracy could be described as a form of government in which people
+                A. develop interest in good governance
+                B. produce sound political manifesto for national development
+                C. participate in the decision making process
+                D. contribute to political liberation
+                """
+            markup: True
+            font_size: '20pt'
+            readonly: True
+            size_hint: 1, 4
+            text_color:"Blue"
+        TextInput:
+            id : timed
+            text:
+        BoxLayout:
+            orientation: "horizontal"
+            Button:
+                text: "Answer"
+                font_size: '30pt'
+                size_hint: 0.5, 0.5
+                on_release: textinput.text = "C"
+
+            TextInput:
+                id:textinput
+                text:
+                font_size: '30pt'
+                disabled: True
+                readonly : True
+                size_hint: 0.5, 0.5

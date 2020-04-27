@@ -1,0 +1,51 @@
+<CreateQuestion>:
+    createSub: createSub
+    sub : sub
+    menu_but : menu_but
+    BoxLayout:
+        orientation : "vertical"
+        TextInput:
+            id : sub
+            text: menu_but.text
+        Spinner:
+            id : menu_but
+            text: 'Mathematics'
+            values: root.list_subject
+        TextInput:
+            id : question
+            text: "Questions"
+            hint_text : 'what is biology'
+
+        TextInput:
+            id : question_no
+            text: "Question No"
+            hint_text : 'e.g 1'
+
+        TextInput:
+            id : option1
+            text: "Option a"
+            hint_text : 'A. it is a study of life'
+
+        TextInput:
+            id : option2
+            text: "Option b"
+            hint_text : 'B.it is a study of life'
+
+        TextInput:
+            id : option3
+            text: "Option c"
+            hint_text : 'C. it is a study of life'
+        TextInput:
+            id : option4
+            text: "option d"
+            hint_text : 'D. it is a study of life'
+
+        TextInput:
+            id : answer
+            text: "Answer"
+            hint_text : 'e.g B'
+
+        Button:
+            id : createSub
+            text : "Create New Question"
+            on_release : root.createQuestion()

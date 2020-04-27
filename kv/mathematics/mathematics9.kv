@@ -1,0 +1,39 @@
+<Mathematics9>:
+    BoxLayout:
+        orientation: 'vertical'
+        TextInput:
+            id : text_input
+            text:
+                """
+                9.	The scores of students in a test are given as 34, 31, 75, 49, 36, 48 and 57.
+                What is the range of the scores?
+                (a)   31
+                (b)  44
+                (c)   48
+                (d)  75
+                (e)  106
+                """
+            markup: True
+            font_name : 'Arial'
+            font_size: '20pt'
+            readonly: True
+            size_hint: 1, 4
+            text_color:"Blue"
+        TextInput:
+            id : timed
+            text:
+        BoxLayout:
+            orientation: "horizontal"
+            Button:
+                text: "Answer"
+                font_size: '30pt'
+                size_hint: 0.5, 0.5
+                on_release: textinput.text = "B"
+
+            TextInput:
+                id:textinput
+                text:
+                font_size: '30pt'
+                disabled: True
+                readonly : True
+                size_hint: 0.5, 0.5

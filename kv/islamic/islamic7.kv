@@ -1,0 +1,35 @@
+<Islamic7>:
+    BoxLayout:
+        orientation: 'vertical'
+        TextInput:
+            id : text_input
+            text:
+                """
+                7. Hadith 1 of An Nawawi's collection was narrated by
+                (a) 'Umar bn 'Abdul-'Aziz
+                (b) 'Umar bn Al-Khattab (c) 'Aishat bnt Abubakr
+                (d) 'Abdullahi bn ' Umar
+                """
+            markup: True
+            font_size: '20pt'
+            readonly: True
+            size_hint: 1, 4
+            text_color:"Blue"
+        TextInput:
+            id : timed
+            text:
+        BoxLayout:
+            orientation: "horizontal"
+            Button:
+                text: "Answer"
+                font_size: '30pt'
+                size_hint: 0.5, 0.5
+                on_release: textinput.text = "B"
+
+            TextInput:
+                id:textinput
+                text:
+                font_size: '30pt'
+                disabled: True
+                readonly : True
+                size_hint: 0.5, 0.5
